@@ -23,15 +23,15 @@ export default function greetings() {
       color = "#180161";
     }
   return (
-   <div className={styles.parent}>
+    <div className={styles.parent}>
      <h1 className={styles.title}>Hello Sir! <span style={{
-        backgroundColor: color,
-        color: "white",
-        padding : "10px",
-        borderRadius: "5px"
-
-     }}>{greetings}</span></h1>
-     <Clock></Clock>
+       backgroundColor: color,
+       color: "white",
+       padding : "10px",
+       borderRadius: "5px"
+       
+      }}>{greetings}</span></h1>
+      <Clock></Clock>
    </div>
   )
 }

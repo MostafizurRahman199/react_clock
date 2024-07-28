@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import styles from './clock.module.css';
 
-const DateComponent = () => {
+const Clock = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
@@ -18,12 +19,12 @@ const DateComponent = () => {
   const formattedTime = currentDate.toLocaleTimeString();
 
   return (
-    <div>
+    <div className={styles}>
+      <p className={styles.time}>{formattedTime}</p>
+      <p className={styles.date}>{formattedDate}</p>
      
-      <p>Date: {formattedDate}</p>
-      <p>Time: {formattedTime}</p>
     </div>
   );
 };
 
-export default DateComponent;
+export default Clock;
