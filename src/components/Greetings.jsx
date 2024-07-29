@@ -18,19 +18,22 @@ export default function greetings() {
     let image = '';
   
   
-    if (currentDate <= 12 && currentDate >= 6) {
+    if (currentDate <= 11 && currentDate >= 6) {
       greetings = "Good Morning";
       color = "#FB773C";
       image = goodMorningImg;
-    } else if (currentDate > 12 && currentDate <= 16) {
+    } 
+    else if (currentDate >= 12 && currentDate <= 16) {
       greetings = "Good Afternoon";
       color = "#EB3678";
       image = goodAfternoon;
-    } else if (currentDate > 16 && currentDate <= 18) {
+    } 
+    else if (currentDate > 16 && currentDate <= 18) {
       greetings = "Good Evening";
       color = "#4F1787";
       image = goodEvening;
-    } else if (currentDate > 19 && currentDate <= 24) {
+    } 
+    else if (currentDate > 19 && currentDate <= 24) {
       greetings = "Good Night";
       color = "#180161";
       image = goodNightImg;
